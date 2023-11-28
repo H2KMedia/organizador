@@ -1,5 +1,5 @@
 import './App.css';
-import logoUTN from './imagenes/utn.png';
+/*import logoUTN from './imagenes/utn.png';*/
 import Tarea from './componentes/Tarea';
 import TareaFormulario from './componentes/TareaFormulario';
 import ListaDeTareas from './componentes/ListaDeTareas';

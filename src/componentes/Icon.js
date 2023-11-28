@@ -1,14 +1,14 @@
 import React from 'react';
-//import logoUTN from './imagenes/utn.png';
+
 
 const ImagenComponent = () => {
-  const logoUTN = '.imagenes/logo-utn.png'; // Ruta a tu imagen
+  const logoUTN = './utn.png'; // Ruta a tu imagen desde la carpeta public ojo!!
 
-return (
+  return (
     <div>
-    <img src={logoUTN} alt="logoUTN"/>
+      <img src={logoUTN} alt="logoUTN" width={100}/>
     </div>
-);
+  );
 };
 
 export default ImagenComponent;
