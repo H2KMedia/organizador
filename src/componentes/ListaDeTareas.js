@@ -17,11 +17,13 @@ function ListaDeTareas() {
   }
 
   const eliminarTarea = (id) => {
-    //console.log('Eliminando tarea');
-    const tareasActualizadas=tareas.filter(tarea => tarea.id !== id);
-    setTarea(tareasActualizadas);
-  }
-  
+    const confirmacionEliminar = window.confirm("¿Estás seguro que completaste la tarea?");
+    if (confirmacionEliminar) {
+    console.log('Eliminando tarea');
+      const tareasActualizadas=tareas.filter(tarea => tarea.id !== id);
+      setTarea(tareasActualizadas);
+}
+}
 
   const completarTarea= (id) =>{
     const tareasActualizadas = tareas.map( tarea =>
